@@ -96,10 +96,12 @@
 }
 
 .name-column {
-  width: 33%;
+  width: 20%;
   border-right: none;
 }
-
+.id-column{
+    width:25%
+}
 .separator {
   margin: 0;
   border: 1px solid #cbd5e1;

@@ -2,7 +2,7 @@ import "./index.css";
 
 const ContactItem = (props) => {
   const { contactDetails, toggleIsFavorite } = props;
-  const { name, mobileNo, isFavorite, id } = contactDetails;
+  const { name, mobileNo, isFavorite, id , address} = contactDetails;
 
   const starImgUrl = isFavorite
     ? "https://assets.ccbp.in/frontend/react-js/star-filled-img.png"
@@ -20,6 +20,10 @@ const ContactItem = (props) => {
       <hr className="separator" />
       <div className="table-cell name-column">
         <p>{name}</p>
+      </div>
+      <hr className="separator" />
+      <div className="table-cell name-column">
+        <p>{address}</p>
       </div>
       <hr className="separator" />
       <div className="table-cell mobile-no-column">
