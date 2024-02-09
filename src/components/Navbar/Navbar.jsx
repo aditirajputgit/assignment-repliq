@@ -112,6 +112,16 @@ const NavBar = () => {
               <Link
                 aria-label="Go to Cart Page"
                 className="navbar-link"
+                to="/admin"
+                onClick={() => setExpand(false)}
+              >
+                <span className="nav-link-label">Admin</span>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link
+                aria-label="Go to Cart Page"
+                className="navbar-link"
                 to="/login"
                 onClick={() => setExpand(false)}
               >
@@ -120,9 +130,10 @@ const NavBar = () => {
             </Nav.Item>
             <Nav.Item className="expanded-cart">
               <Link
-                aria-label="Go to Cart Page"
+                aria-label="Go to Admin Page"
                 className="navbar-link"
                 to="/admin"
+                onClick={() => setExpand(false)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -137,8 +148,8 @@ const NavBar = () => {
                   />
                 </svg>
               </Link>
-              </Nav.Item>
-              <Nav.Item>
+            </Nav.Item>
+            <Nav.Item>
               <Link
                 aria-label="Go to Cart Page"
                 to="/cart"
