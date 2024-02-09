@@ -46,6 +46,16 @@ function Register() {
             />
           </p>
           <p>
+            <label className="input-label">Phone Number</label>
+            <br />
+            <input
+              type="email"
+              name="Phone number"
+              className="username-input-filed"
+              required
+            />
+          </p>
+          <p>
             <label className="input-label">Password</label>
             <br />
             <input
