@@ -1,10 +1,17 @@
-import Customers from "../Customers/Customers"
-
-function Customer() {
-    return(
-        <>
-        <Customers/>
-        </>
-    )
+import CustomerDisplay from "../components/CustomerDisplay";
+import Sidebar from "../Dashboard/Sidebars";
+import "./pages.css";
+function Customers() {
+  return (
+    <div className="customer-container">
+      <div>
+        <Sidebar />
+      </div>
+      <div className="col-16" id="main">
+        <CustomerDisplay />
+      </div>
+    </div>
+  );
 }
-export default Customer
+
+export default Customers;
