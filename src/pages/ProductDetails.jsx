@@ -1,4 +1,4 @@
-import { Fragment, useContext, useState } from "react";
+import {  useContext, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import { DataContainer } from "../App";
 import { Col, Container, Row } from "react-bootstrap";
@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 
 const ProductDetails = () => {
     const {selectedProduct,setSelectedProduct,addToCart} =useContext(DataContainer);
+    /* params is add to get the id number  */
     const {id} =useParams();
     if(!selectedProduct) {
         const storedProduct =localStorage.getItem(`selectedProduct-${id}`);
@@ -20,7 +21,7 @@ const ProductDetails = () => {
         addToCart(selectedProduct,quantity);
     }
     return ( 
-        <Fragment>
+        <>
             <Banner title={selectedProduct?.productName} />
             <section className="product-page">
                 <Container>
@@ -51,7 +52,7 @@ const ProductDetails = () => {
                     </Row>
                 </Container>
             </section>
-        </Fragment>
+        </>
     );
 }
 

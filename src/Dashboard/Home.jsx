@@ -5,6 +5,8 @@ import {
   BsPeopleFill,
   BsFillBellFill,
 } from "react-icons/bs";
+
+//Used for made bar chart from rechat and install this dependence
 import {
   BarChart,
   Bar,

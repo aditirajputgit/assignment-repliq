@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Cart = () => {
   const { CartItem, addToCart, decreaseQty, deleteProduct} =useContext(DataContainer);
   const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.price, 0)
-
+ //Adding item so that they can see 
   function addingItem(){
     return(
       CartItem.map((item) => {

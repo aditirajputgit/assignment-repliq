@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import "./pages.css";
 
 const CheckOut = () => {
+    //context is used to share multiple application
   const { CartItem } =
     useContext(DataContainer);
   const totalPrice = CartItem.reduce(
@@ -43,6 +44,7 @@ const CheckOut = () => {
         <Row className="justify-content-center">
           <Col md={8}>{addingItem()}</Col>
         </Row>
+        { /* displaying the total price of item you wanted to purchase */}
         <Col md={4}>
           <div className="cart-total">
             <div className=" d_flex">
