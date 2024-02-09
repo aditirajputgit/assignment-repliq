@@ -14,6 +14,7 @@ const RegisterForm = lazy(() => import("./pages/Register"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminDashBoard = lazy(() => import("./pages/Admin"));
 const Customer = lazy(()=>import("./pages/Customer"));
+const CheckOut = lazy(() => import("./pages/Checkout"));
 export const DataContainer = createContext();
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
             <Route path="/register" element={<RegisterForm />} />
             <Route path="/admin" element={<AdminDashBoard />} />
             <Route path="/customer" element={<Customer />} />
+            <Route path="/checkout" element={<CheckOut />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

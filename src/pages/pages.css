@@ -125,4 +125,20 @@ body {
     display: inline;
   }
 }
-
+.pay-button{
+    text-align: center;
+    background-color: #1d2634;
+    color: white;
+    padding: .5rem;
+    width: 3.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.cart-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}

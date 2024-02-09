@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { DataContainer } from "../App"
 import { Col, Container, Row } from "react-bootstrap";
 import "./pages.css"
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { CartItem, addToCart, decreaseQty, deleteProduct} =useContext(DataContainer);
@@ -67,7 +68,9 @@ const Cart = () => {
                 <h3>${totalPrice}.00</h3>
               </div>
             </div>
-            <button className="checkout-button" >CheckOut</button>
+            <Link to="/checkout">
+              <button className="checkout-button">CheckOut</button>
+            </Link>
           </Col>
         </Row>
       </Container>
